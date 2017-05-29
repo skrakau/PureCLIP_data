@@ -1,0 +1,95 @@
+<dreme version="4.11.3" release="Tue Feb 21 16:20:52 2017 -0800">
+  <model>
+    <command_line>dreme -p crosslinkRegions.HMM_SET0.top5000.w10.PUM2_RBFOX2_U2AF2.fasta -oc DREME/ -n crosslinkRegions.HMM_SET0.top5000.bg_near.w10.PUM2_RBFOX2_U2AF2.fasta -norc -k 6 -m 4</command_line>
+    <positives name="crosslinkRegions.HMM SET0.top5000.w10.PUM2 RBFOX2 U2AF2" count="12384" file="crosslinkRegions.HMM_SET0.top5000.w10.PUM2_RBFOX2_U2AF2.fasta" last_mod_date="Mon May 29 11:34:26 CEST 2017" />
+    <negatives name="crosslinkRegions.HMM SET0.top5000.bg near.w10.PUM2 RBFOX2 U2AF2" count="24768" from="file" file="crosslinkRegions.HMM_SET0.top5000.bg_near.w10.PUM2_RBFOX2_U2AF2.fasta" last_mod_date="Mon May 29 11:37:44 CEST 2017" />
+    <alphabet name="DNA" like="dna">
+      <letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+      <letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+      <letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+      <letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+      <letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+      <letter id="V" symbol="V" equals="ACG" name="Not T"/>
+      <letter id="H" symbol="H" equals="ACT" name="Not G"/>
+      <letter id="D" symbol="D" equals="AGT" name="Not C"/>
+      <letter id="B" symbol="B" equals="CGT" name="Not A"/>
+      <letter id="M" symbol="M" equals="AC" name="Amino"/>
+      <letter id="R" symbol="R" equals="AG" name="Purine"/>
+      <letter id="W" symbol="W" equals="AT" name="Weak"/>
+      <letter id="S" symbol="S" equals="CG" name="Strong"/>
+      <letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+      <letter id="K" symbol="K" equals="GT" name="Keto"/>
+    </alphabet>
+    <strands>given</strands>
+    <background A="0.196" C="0.233" G="0.235" T="0.336" from="dataset"/>
+    <stop evalue="0.05" count="4"/>
+    <ngen>100</ngen>
+    <add_pv_thresh>0.01</add_pv_thresh>
+    <seed>1</seed>
+    <host>gnosiophobie.molgen.mpg.de</host>
+    <when>Mon May 29 11:40:26 CEST 2017</when>
+  </model>
+  <motifs>
+    <motif id="m01" seq="TTTTNV" length="6" nsites="5398" p="5398" n="1467" pvalue="5.3e-1622" evalue="2.9e-1618" unerased_evalue="2.9e-1618">
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.051501" C="0.062801" G="0.062801" T="0.822897"/>
+      <pos A="0.304742" C="0.201000" G="0.494257" T="0.000000"/>
+      <match seq="TTTTTG" p="2464" n="272" pvalue="3.8e-911" evalue="2.1e-907"/>
+      <match seq="TTTTGA" p="1714" n="50" pvalue="2.3e-765" evalue="1.3e-761"/>
+      <match seq="TTTTTA" p="1190" n="310" pvalue="7.0e-306" evalue="3.8e-302"/>
+      <match seq="TTTTAA" p="784" n="199" pvalue="7.3e-202" evalue="4.0e-198"/>
+      <match seq="TTTTTC" p="788" n="403" pvalue="2.6e-122" evalue="1.4e-118"/>
+      <match seq="TTTTCC" p="420" n="120" pvalue="7.0e-101" evalue="3.8e-097"/>
+      <match seq="TTTTGG" p="311" n="85" pvalue="9.7e-077" evalue="5.3e-073"/>
+      <match seq="TTTTAG" p="323" n="101" pvalue="1.1e-073" evalue="6.2e-070"/>
+      <match seq="TTTTCA" p="259" n="86" pvalue="4.4e-057" evalue="2.4e-053"/>
+      <match seq="TTTTGC" p="200" n="78" pvalue="1.0e-039" evalue="5.6e-036"/>
+      <match seq="TTTTAC" p="169" n="59" pvalue="1.7e-036" evalue="9.2e-033"/>
+      <match seq="TTTTCG" p="118" n="26" pvalue="3.2e-033" evalue="1.8e-029"/>
+    </motif>
+    <motif id="m02" seq="MTTTCS" length="6" nsites="268" p="268" n="115" pvalue="5.7e-049" evalue="2.3e-045" unerased_evalue="2.3e-045">
+      <pos A="0.171642" C="0.828358" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.798507" G="0.201493" T="0.000000"/>
+      <match seq="CTTTCC" p="181" n="53" pvalue="1.8e-043" evalue="7.3e-040"/>
+      <match seq="CTTTCG" p="41" n="26" pvalue="2.7e-006" evalue="1.1e-002"/>
+      <match seq="ATTTCG" p="13" n="5" pvalue="8.5e-004" evalue="3.4e+000"/>
+      <match seq="ATTTCC" p="33" n="31" pvalue="2.0e-003" evalue="7.9e+000"/>
+    </motif>
+    <motif id="m03" seq="DTYATC" length="6" nsites="231" p="231" n="126" pvalue="5.1e-034" evalue="2.0e-030" unerased_evalue="7.7e-036">
+      <pos A="0.277056" C="0.000000" G="0.324675" T="0.398268"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.445887" G="0.000000" T="0.554113"/>
+      <pos A="1.000000" C="0.000000" G="0.000000" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="1.000000" G="0.000000" T="0.000000"/>
+      <match seq="TTTATC" p="66" n="30" pvalue="1.4e-012" evalue="5.5e-009"/>
+      <match seq="ATCATC" p="34" n="13" pvalue="5.2e-008" evalue="2.1e-004"/>
+      <match seq="GTTATC" p="32" n="14" pvalue="5.5e-007" evalue="2.2e-003"/>
+      <match seq="ATTATC" p="30" n="18" pvalue="3.3e-005" evalue="1.3e-001"/>
+      <match seq="TTCATC" p="26" n="15" pvalue="7.7e-005" evalue="3.1e-001"/>
+      <match seq="GTCATC" p="43" n="36" pvalue="9.0e-005" evalue="3.6e-001"/>
+    </motif>
+    <motif id="m04" seq="TTTVTR" length="6" nsites="372" p="372" n="347" pvalue="8.5e-025" evalue="3.3e-021" unerased_evalue="3.1e-058">
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.247312" C="0.430108" G="0.322581" T="0.000000"/>
+      <pos A="0.000000" C="0.000000" G="0.000000" T="1.000000"/>
+      <pos A="0.438172" C="0.000000" G="0.561828" T="0.000000"/>
+      <match seq="TTTCTA" p="72" n="47" pvalue="1.1e-009" evalue="4.4e-006"/>
+      <match seq="TTTATA" p="46" n="36" pvalue="1.9e-005" evalue="7.3e-002"/>
+      <match seq="TTTATG" p="46" n="36" pvalue="1.9e-005" evalue="7.3e-002"/>
+      <match seq="TTTGTG" p="75" n="81" pvalue="9.4e-005" evalue="3.6e-001"/>
+      <match seq="TTTCTG" p="88" n="103" pvalue="1.7e-004" evalue="6.5e-001"/>
+      <match seq="TTTGTA" p="45" n="44" pvalue="5.8e-004" evalue="2.2e+000"/>
+    </motif>
+  </motifs>
+  <run_time cpu="50.88" real="50.94" stop="count"/>
+</dreme>
