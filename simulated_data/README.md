@@ -1,4 +1,4 @@
-# Simulated data
+# Simulated data (hg19)
 
 
 BAM files
