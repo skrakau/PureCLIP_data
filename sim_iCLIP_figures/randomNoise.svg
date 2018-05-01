@@ -113,7 +113,7 @@
      id="layer1"
      transform="translate(49.13691,-112.33399)">
     <g
-       transform="matrix(0.35277777,0,0,-0.35277777,-49.13691,182.65767)"
+       transform="matrix(0.35277777,0,0,-0.35277777,-49.13691,184.07583)"
        inkscape:label="bench_sim.pr.SIM_SET_FIX6.HMM_SET8.cs"
        id="g5506">
       <g
@@ -802,7 +802,7 @@
          id="g6127" />
     </g>
     <g
-       transform="matrix(0.35277777,0,0,-0.35277777,93.990085,185.35289)"
+       transform="matrix(0.35277777,0,0,-0.35277777,93.990085,184.07583)"
        inkscape:label="bench_sim.pr.SIM_SET_FIX5.HMM_SET8.cs"
        id="g6284">
       <g
