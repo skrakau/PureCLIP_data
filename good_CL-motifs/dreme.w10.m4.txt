@@ -1,0 +1,112 @@
+# DREME 4.11.3
+#     command: dreme -p input_reads/hmm_1/crosslinkRegions.HMM_SET0.top5000.w10.fasta -oc input_reads/DREME/hmm_1_HMM_SET0.top5000_motifs/ -n input_reads/hmm_1/crosslinkRegions.HMM_SET0.top5000.bg_near.w10.fasta -norc -k 6 -m 4
+#   positives: 3824 from input_reads/hmm_1/crosslinkRegions.HMM_SET0.top5000.w10.fasta (Thu May 25 01:15:02 CEST 2017)
+#   negatives: 7648 from input_reads/hmm_1/crosslinkRegions.HMM_SET0.top5000.bg_near.w10.fasta (Thu May 25 01:15:02 CEST 2017)
+#        host: gnosiophobie.molgen.mpg.de
+#        when: Thu May 25 01:15:04 CEST 2017
+
+MEME version 4.11.3
+
+ALPHABET "DNA" DNA-LIKE
+A "Adenine" CC0000 ~ T "Thymine" 008000
+C "Cytosine" 0000CC ~ G "Guanine" FFB300
+N "Any base" = ACGT
+X = ACGT
+. = ACGT
+V "Not T" = ACG
+H "Not G" = ACT
+D "Not C" = AGT
+B "Not A" = CGT
+M "Amino" = AC
+R "Purine" = AG
+W "Weak" = AT
+S "Strong" = CG
+Y "Pyrimidine" = CT
+K "Keto" = GT
+U = T
+END ALPHABET
+
+strands: +
+
+Background letter frequencies (from dataset):
+A 0.212 C 0.232 G 0.233 T 0.323
+
+
+MOTIF TTTTNV DREME
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      TTTTNV     BNAAAA       1695        438   5.9e-526   2.3e-522
+#           TTTTTG     CAAAAA        597         82   2.6e-205   1.0e-201
+#           TTTTTA     TAAAAA        483         84   8.4e-152   3.3e-148
+#           TTTTGA     TCAAAA        347         13   8.6e-150   3.4e-146
+#           TTTTAA     TTAAAA        289         56   6.9e-086   2.7e-082
+#           TTTTTC     GAAAAA        321        111   1.4e-070   5.4e-067
+#           TTTTCC     GGAAAA        152         35   5.0e-042   1.9e-038
+#           TTTTAG     CTAAAA        122         39   1.5e-028   5.8e-025
+#           TTTTCA     TGAAAA         97         26   2.7e-025   1.1e-021
+#           TTTTAC     GTAAAA         66         19   5.5e-017   2.1e-013
+#           TTTTGG     CCAAAA         72         27   9.9e-016   3.9e-012
+#           TTTTGC     GCAAAA         66         27   1.1e-013   4.3e-010
+#           TTTTCG     CGAAAA         31         10   3.5e-008   1.4e-004
+
+letter-probability matrix: alength= 4 w= 6 nsites= 1695 E= 2.3e-522
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.057227 0.056047 0.060177 0.826549
+0.370501 0.246608 0.382891 0.000000
+
+
+MOTIF TCTTTV DREME
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      TCTTTV     BAAAGA        105         78   1.6e-011   4.6e-008
+#           TCTTTA     TAAAGA         28         13   4.9e-006   1.4e-002
+#           TCTTTC     GAAAGA         53         44   1.2e-005   3.5e-002
+#           TCTTTG     CAAAGA         25         22   3.8e-003   1.1e+001
+
+letter-probability matrix: alength= 4 w= 6 nsites= 105 E= 4.6e-008
+0.000000 0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000 0.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.257143 0.504762 0.238095 0.000000
+
+
+MOTIF TTTTWT DREME
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      TTTTWT     AWAAAA        185        194   1.7e-010   5.1e-007
+#           TTTTTT     AAAAAA        137        145   5.9e-008   1.7e-004
+#           TTTTAT     ATAAAA         51         52   4.7e-004   1.4e+000
+
+letter-probability matrix: alength= 4 w= 6 nsites= 185 E= 5.1e-007
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.000000 0.000000 1.000000
+0.275676 0.000000 0.000000 0.724324
+0.000000 0.000000 0.000000 1.000000
+
+
+MOTIF TBATCA DREME
+
+#             Word    RC Word        Pos        Neg    P-value    E-value
+# BEST      TBATCA     TGATVA         50         28   2.4e-008   7.1e-005
+#           TTATCA     TGATAA         19          8   9.1e-005   2.6e-001
+#           TGATCA     TGATCA         17         11   2.7e-003   7.8e+000
+#           TCATCA     TGATGA         15          9   3.2e-003   9.3e+000
+
+letter-probability matrix: alength= 4 w= 6 nsites= 50 E= 7.1e-005
+0.000000 0.000000 0.000000 1.000000
+0.000000 0.280000 0.340000 0.380000
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000 0.000000
+
+
+# Stopping reason: target motif count reached
+#    Running time: 11.23 seconds
